@@ -1,0 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 2000px;
+}
+#navbar a:hover {
+  color: #fef3c7;
+}
