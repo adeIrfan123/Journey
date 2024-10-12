@@ -1,23 +1,29 @@
 // Sign in
 const signInBtn = document.querySelector("#signBtn");
 const signInMenu = document.querySelector("#signIn-menu");
+let SignInMode = true;
 signInBtn.addEventListener("click", function () {
   signInMenu.classList.toggle("sign-active");
+  if (SignInMode) {
+    signInBtn.innerHTML = "Sign Up";
+    SignInMode = false;
+  } else {
+    signInBtn.innerHTML = "Sign In";
+    SignInMode = true;
+  }
 });
-// function verifyCredentials (email, password) {
-//     const validated = validateUserName(email);
 
-//     if (validated == false){
-//          return "Sorry, not verified.";
-//     }
+let inputEmail = document.getElementById("email");
+let inputPw = document.getElementById("password");
+let btnLogin = document.getElementById("login");
 
-//     const validPassword =  validatePassword(password);
+btnLogin.addEventListener("click", function () {
+  const userEmail = "irfan@gmail.com";
+  const userPw = "123";
 
-//     if (validPassword == true) {
-//          return "Verified!";
-//     }
-
-//     else {
-//          return "Sorry, not verified.";
-//     }
-// }
+  if (inputEmail.value === userEmail && inputPw.value === userPw) {
+    window.open("index.html");
+  } else {
+    document.getElementById("invalid").classList.remove("hidden");
+  }
+});

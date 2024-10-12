@@ -44,17 +44,17 @@
       };
     </script>
   </head>
-  <body>
+  <body class="font-poppins">
     <!-- Header Start -->
     <sections>
       <header
-        class="bg-gradient-to-t from-slate-200 to-amber-100 w-full flex items-center shadow-xl z-10"
+        class="bg-gradient-to-t from-slate-200 to-amber-100 w-full flex items-center shadow-xl"
       >
         <div class="container">
           <div class="flex justify-between items-center relative">
             <div class="px-4">
               <a
-                href="#home"
+                href="#hero"
                 class="text-lg font-poppins font-bold block py-6 w-9 lg:text-3xl"
               >
                 <svg
@@ -93,7 +93,7 @@
                 <ul class="block lg:flex lg:font-semibold">
                   <li class="group">
                     <a
-                      href="#home"
+                      href="#hero"
                       class="text-base text-black hover:text-cyan-500 flex mx-3 py-2"
                       >Home</a
                     >
@@ -478,17 +478,46 @@
       </div>
     </section>
     <!-- Contact Section End -->
-
-    <div class="container">
-      <div class="flex justify-between items-center relative">
-        <div class=""></div>
-      </div>
-    </div>
     <!-- <div class="py-96"></div> -->
     <!-- Back To home -->
 
     <div class="fixed bottom-0 right-0 animate-bounce duration-1000">
-      <a href="#" id="back-home" class="text-3xl">🌲</a>
+      <button id="btn-nav" class="text-3xl">🌲</button>
+      <div
+        id="footer-menu"
+        class="hidden absolute py-5 border bg-transparent bg-slate-300 shadow-lg rounded-lg max-w-[250px] w-96 right-4 -top-52 lg:right-12 lg:max-w-[330px] lg:-top-16"
+      >
+        <ul class="block lg:flex lg:font-semibold">
+          <li class="group">
+            <a
+              href="#hero"
+              class="text-base text-black hover:text-cyan-500 flex mx-3 py-2"
+              >Home</a
+            >
+          </li>
+          <li class="group">
+            <a
+              href="#about"
+              class="text-base text-black hover:text-cyan-500 flex mx-3 py-2"
+              >About</a
+            >
+          </li>
+          <li class="group">
+            <a
+              href="#journey"
+              class="text-base text-black hover:text-cyan-500 flex mx-3 py-2"
+              >Journey</a
+            >
+          </li>
+          <li class="group">
+            <a
+              href="#contact"
+              class="text-base text-black hover:text-cyan-500 flex mx-3 py-2"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script src="js/script.js"></script>

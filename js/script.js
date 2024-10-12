@@ -12,3 +12,15 @@ document.addEventListener("click", function (e) {
     hamburger.classList.remove("hamburger-active");
   }
 });
+
+const btnNav = document.getElementById("btn-nav");
+const footNav = document.getElementById("footer-menu");
+btnNav.addEventListener("click", function () {
+  footNav.classList.toggle("hidden");
+});
+
+document.addEventListener("click", function (e) {
+  if (!btnNav.contains(e.target) && !footNav.contains(e.target)) {
+    footNav.classList.add("hidden");
+  }
+});

@@ -126,7 +126,7 @@
                   id="email"
                   type="email"
                   placeholder="Email"
-                  class="w-[98%] rounded-xl my-4 py-2 px-3 shadow-lg shadow-slate-600/50 focus:outline-none focus:ring-1 focus:ring-yellow-600 focus:border-yellow-500 focus:shadow-yellow-200 disabled:border focus:transition-all"
+                  class="w-[98%] rounded-xl my-4 py-2 px-3 shadow-lg shadow-slate-600/50 focus:outline-none focus:ring-1 focus:ring-yellow-600 focus:border-yellow-500 focus:shadow-yellow-200 disabled:border invalid:text-pink-700 invalid:border-pink-700 focus:invalid:border-pink-700 focus:invalid:ring-pink-700 focus:invalid:shadow-pink-300 peer focus:transition-all"
                 />
                 <input
                   id="password"
@@ -134,11 +134,25 @@
                   placeholder="Password"
                   class="w-[98%] rounded-xl py-2 px-3 shadow-lg shadow-slate-600/50 focus:outline-none focus:ring-1 focus:ring-yellow-600 focus:border-yellow-500 focus:shadow-yellow-200 disabled:border focus:transition-all"
                 />
+
+                <p
+                  class="text-xs mt-2 invisible peer-invalid:visible text-pink-700 -mb-3"
+                >
+                  Email tidak valid brokkk!!!
+                </p>
+                <p
+                  id="invalid"
+                  class="text-xs mt-2 hidden peer-invalid:visible text-pink-700 -mb-3"
+                >
+                  Email dan Password tidak valid brokkk!!!
+                </p>
+
                 <div class="my-5">
                   <button
+                    id="login"
                     class="w-24 p-1 rounded-xl font-bold shadow-xl hover:scale-105 hover:bg-gradient-to-r hover:from-amber-600 hover:bg-yellow-500 duration-1000"
                   >
-                    <a href="index.html">Log In</a>
+                    Log In
                   </button>
                 </div>
               </form>
